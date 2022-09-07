@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import NewsCard from "../components/NewsCard";
 
 const Main = () => {
-  const [query, setQuery] = useState("random");
+  const [query, setQuery] = useState("breaking-news");
   const [news, setNews] = useState(null);
   
   const API_KEY = process.env.REACT_APP_API_KEY;
