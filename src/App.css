@@ -9,6 +9,15 @@
   flex-wrap: wrap;
 }
 
+.card-body{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 .card:hover{
   transition: transform .4s;
   transform: scale(1.05);

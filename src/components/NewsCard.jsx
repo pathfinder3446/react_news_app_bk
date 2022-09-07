@@ -12,7 +12,7 @@ const NewsCard = ({ news }) => {
       {news.map((i, index) => (
         <Card className="card" key={index} style={{ margin: "1rem", width: "18rem" }}>
           <Card.Img variant="top" src={i.urlToImage} />
-          <Card.Body>
+          <Card.Body className="card-body">
             <Card.Title>{i.title}</Card.Title>
             <Card.Text>{i.content}</Card.Text>
           </Card.Body>
@@ -20,7 +20,7 @@ const NewsCard = ({ news }) => {
             <ListGroup.Item>{i.publishedAt}</ListGroup.Item>
             <ListGroup.Item>{i.source.name}</ListGroup.Item>
           </ListGroup>
-          <Card.Body>
+          <Card.Body className="card-btn">
             <Button onClick={() => navigate("details", { state: i })}>
               Ayrıntılar
             </Button>
